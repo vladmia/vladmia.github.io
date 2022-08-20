@@ -19,6 +19,7 @@
   }
 
   .title {
+    width: 256px;
     margin-bottom: 20px;
     font: {
       size: $font-lg;
@@ -29,7 +30,9 @@
   }
 
   .description {
+    width: 256px;
     margin-bottom: 26px;
+    
     font: {
       size: $font-md;
       weight: $medium;
