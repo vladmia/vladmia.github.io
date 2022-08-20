@@ -1,0 +1,62 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    background: $lightGray;
+}
+
+// Flex-box helper
+.flex {
+    &-jc-aic,
+    &-sa-aic,
+    &-sb-aic,
+    &-se-aic {
+        display: flex;
+        align-items: center;
+    }
+    &-jc-aic {
+        justify-content: center;
+    }
+    &-sa-aic {
+        justify-content: space-around;
+    }
+    &-sb-aic {
+        justify-content: space-between;
+    }
+    &-se-aic {
+        justify-content: space-evenly;
+    }
+
+    &-col-jcaic,
+    &-col-saaic,
+    &-col-sbaic,
+    &-col-seaic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-col-jcaic {
+        justify-content: center;
+    }
+    &-col-saaic {
+        justify-content: space-around;
+    }
+    &-col-sbaic {
+        justify-content: space-between;
+    }
+    &-col-seaic {
+        justify-content: space-evenly;
+    }
+
+}

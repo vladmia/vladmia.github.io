@@ -1,0 +1,40 @@
+// border radius for outer & inner divs - 20px, 10px
+// width outer div: 320px, images: 288px(square)
+// padding : outer div: 16px
+// margins: image -> title -> paragraph -> end (30px, 20px, 26px)
+// font-size for larger text : 22px, paragraph: 15px
+.wrapper {
+  width: 320px;
+  height: auto;
+  padding: 16px;
+  border: none;
+  border-radius: 20px;
+  background: $white;
+
+  .qrcode {
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font: {
+      size: $font-lg;
+      weight: $bold;
+    }
+    text-align: center;
+    color: $darkBlue;
+  }
+
+  .description {
+    margin-bottom: 26px;
+    font: {
+      size: $font-md;
+      weight: $medium;
+    }
+    text-align: center;
+    color: $grayishBlue;
+  }
+}
